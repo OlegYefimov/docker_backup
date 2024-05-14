@@ -2,6 +2,9 @@
 #edit these to your config
 #place in folder with docker compose
 BWDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+#change working dir
+cd ${BWDIR}
+
 FOLDER_NAME=$(basename "$(pwd)")
 DATETIME="$(date +'%Y-%m-%d_%H-%M-%S')"
 FOLDERPATH="$(date +'%Y-%m-%d')"
